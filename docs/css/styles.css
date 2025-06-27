@@ -98,6 +98,7 @@ header {
 
 
 #hero-left {
+    color: white;
     width: 30%;
     padding: 0 40px 0 0;
     display: flex;
