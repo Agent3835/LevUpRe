@@ -55,7 +55,7 @@ header {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* background-image: url(../img/showcase/portadaeldenring.png); */
+    max-height: 1440px;
     background-size: cover;
     background-position: center;
 }
@@ -65,10 +65,10 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 1000px;
+    overflow: hidden;
     background-image: url(../img/showcase/portadaeldenring.png);
     background-size: cover;
-    /* escala y recorta sin deformar */
     z-index: 0;
 }
 
@@ -85,7 +85,7 @@ header {
 
 .hero-content {
     position: relative;
-    top: -50px;
+    top: -180px;
     width: 1440px;
     margin: 0 auto;
     transform: translateX(-0%);
