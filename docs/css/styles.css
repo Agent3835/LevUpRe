@@ -10,7 +10,6 @@ body {
     padding: 0;
     height: 80%;
     background-color: #0B0B0B;
-    /* mismo color que tu header o el que tú elijas */
 }
 
 header {
@@ -181,7 +180,6 @@ header {
 
 .botones-plataforma button:not(:last-child) {
     border-right: none;
-    /* evita doble borde entre ellos */
 }
 
 .boton-resena {
@@ -194,7 +192,6 @@ header {
 
 .boton-resena .btn-red {
     width: 100%;
-    /* hace que el botón ocupe todo el contenedor */
     background-color: transparent;
     border: 1px solid red;
     color: red;
@@ -314,10 +311,6 @@ header {
     padding: 15px 60px;
     font-size: 12px;
     color: #929292;
-}
-
-.footer-bottom .legal-copy {
-    /* texto en gris tenue */
 }
 
 .footer-bottom .legal-links a {
