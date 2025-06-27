@@ -4,18 +4,20 @@
     box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #111111;  /* mismo color que tu header o el que tú elijas */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    background-color: #0B0B0B;
+    /* mismo color que tu header o el que tú elijas */
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #111111;
+    background: #0B0B0B;
     padding: 30px 60px;
 }
 
@@ -51,10 +53,23 @@ header {
 
 .hero {
     position: relative;
+    width: 100%;
     height: 100vh;
-    background-image: url(../img/showcase/portadaeldenring.png);
+    /* background-image: url(../img/showcase/portadaeldenring.png); */
     background-size: cover;
     background-position: center;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/showcase/portadaeldenring.png);
+    background-size: cover;
+    /* escala y recorta sin deformar */
+    z-index: 0;
 }
 
 .hero::after {
@@ -70,12 +85,17 @@ header {
 
 .hero-content {
     position: relative;
+    top: -50px;
+    width: 1440px;
+    margin: 0 auto;
+    transform: translateX(-0%);
     display: flex;
     height: 100%;
-     align-items: flex-end;
+    align-items: flex-end;
     z-index: 1;
     padding: 0 100px;
 }
+
 
 #hero-left {
     width: 30%;
@@ -172,17 +192,18 @@ header {
 }
 
 .boton-resena .btn-red {
-  width: 100%;                /* hace que el botón ocupe todo el contenedor */
-  background-color: transparent;
-  border: 1px solid red;
-  color: red;
-  padding: 12px;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 14px;
-  cursor: pointer;
-  text-align: center;
-  transition: all 0.3s ease;
+    width: 100%;
+    /* hace que el botón ocupe todo el contenedor */
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 #hero-right {
@@ -228,4 +249,83 @@ header {
 .disponibilidad #genero {
     color: #fff;
     font-weight: bold;
+}
+
+/* Footer styles */
+
+
+.site-footer {
+    height: 250px;
+    background: #0B0B0B;
+    color: #fff;
+}
+
+/* Sección superior */
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo img {
+    height: 20px;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 9.7px;
+    transition: color 0.2s;
+}
+
+.footer-menu a:hover {
+    color: #ff0000;
+}
+
+.footer-menu a.active {
+    color: #ff0000;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.footer-social img {
+    height: 20px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+}
+
+/* Sección inferior */
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    font-size: 12px;
+    color: #929292;
+}
+
+.footer-bottom .legal-copy {
+    /* texto en gris tenue */
+}
+
+.footer-bottom .legal-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: 500;
+}
+
+.footer-bottom .legal-links a:hover {
+    text-decoration: underline;
 }
